@@ -4,7 +4,7 @@
 
   <groupId>ocmc</groupId>
   <artifactId>liml.pdf.daemon</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>liml.pdf.daemon</name>
@@ -43,8 +43,7 @@
 		        <archive>
 		          <manifest>
 		            <addClasspath>true</addClasspath>
-		            <classpathPrefix>resources/</classpathPrefix>
-		            <mainClass>ocmc.liml.pdf.daemon.app</mainClass>
+		            <mainClass>ocmc.liml.pdf.daemon.App</mainClass>
 		          </manifest>
 		        </archive>
 		      </configuration>
