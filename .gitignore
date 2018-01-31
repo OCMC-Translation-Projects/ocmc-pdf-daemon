@@ -1,0 +1,7 @@
+.settings
+.metadata
+/.settings/
+/.metadata/
+/repo/
+/target/
+/dependency-reduced-pom.xml
