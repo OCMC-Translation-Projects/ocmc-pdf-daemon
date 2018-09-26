@@ -18,7 +18,10 @@ import java.util.concurrent.Executors;
 public class App {
     public static void main( String[] args ) {
     	try {
-    		String dirToWatch = args[0];
+    		String dirToWatch = System.getenv("SRV_FILE");
+    		if (dirToWatch == null || dirToWatch.length() == 0 && args.length > 0) {
+        		dirToWatch = args[0];
+    		}
     		Path path = Paths.get(dirToWatch);
     		System.out.println( "Hello World! I have my eye on " + dirToWatch );
             WatchService watcher = FileSystems.getDefault().newWatchService();
